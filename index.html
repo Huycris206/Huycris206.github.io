@@ -4,10 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>VỢ IU</title>
-    <style>
-
-    </style>
-    <script>
+    <link rel="stylesheet" href="style.css">
+    <script  >
+    
+        var tuoi=parseInt(window.prompt("tuổi của bạn"))
+        if(tuoi<16){
+            window.open("https://thuvienphapluat.vn/phap-luat/bao-nhieu-tuoi-thi-du-tuoi-quan-he-tinh-duc-theo-phap-luat-nghi-ngo-mot-nguoi-bi-xam-hai-tinh-duc-k-810566-180201.html","_self");
+        }
         let dem=0;
         let bam=()=>{
             dem++;
@@ -29,28 +32,21 @@
     </script>
 </head>
 <body>
-    <p>
+    <div class="container">
+        <div id="vo" class="text">
+            lê thị thương
+        </div>
+        <br>
+        <button onclick="moTrangMoi()" class="button">
+            Link Video
+        </button>
+          <br>
+          <img id="anh" src="img/lêthuong.jpg" class="image">
         
-      <div id="vo" style="color: red; background-color: blue;
-                  display: inline;
-                  font-size: 30px;">
-        lê thị thương
-      </div>
-      <br>
-      <button onclick="moTrangMoi()" style="font-size: 40px; background-color: orange; color: white; border: none; padding: 10px 20px; border-radius: 5px; cursor: pointer;">
-        Link Video
-    </button>
-      <br>
-      <img id="anh" src="img/lêthuong.jpg" width="20%"
-                                  height="20%">
-    </p>
-    <form>
-        <input type="button" value="nhấp" onclick="bam()"
-               stye ="width:500px
-                      height: 500px">
-        <input type="button" value="rút ra" onclick="rut()"
-               stye ="width:500px
-                      height: 500px">
-    </form>
+        <form>
+            <input type="button" value="nhấp" onclick="bam()"class="button">
+            <input type="button" value="rút ra" onclick="rut()"class="button">
+        </form>
+    </div>
 </body>
 </html>
