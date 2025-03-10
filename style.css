@@ -12,7 +12,7 @@ body {
 /* Khối chứa nội dung chính */
 .container {
     background: white;
-    padding: 100px;
+    padding: 300px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
@@ -45,9 +45,16 @@ body {
     width: 100%;
     max-width: 300px;
     height: auto;
-    margin-top: 10px;
     border-radius: 10px;
 }
+
+@media (max-width: 600px) {
+    .image {
+        width: 80%;
+        max-width: none;
+    }
+}
+
 
 /* Nút bấm lớn */
 .big-button {
