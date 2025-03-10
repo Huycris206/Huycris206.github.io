@@ -1,13 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>VỢ IU</title>
+    <style>
+
+    </style>
+    <script>
+        let dem=0;
+        let bam=()=>{
+            dem++;
+            if(dem==5){
+             dem=0;
+             document.getElementById("anh").src="img/shecum.jpg";
+             setTimeout(() => {
+                    alert("Em ấy đã ra!");
+                }, 100);
+            }
+        }
+        let rut=()=>{
+            dem=0
+            document.getElementById("anh").src="img/lêthuong.jpg";
+        }
+        let moTrangMoi=() =>{
+            window.open("https://www.facebook.com/copylamgivayban", "_blank");
+        }
+    </script>
 </head>
 <body>
-    <h1>lê thị thương ngu như chó</h1>
-    <script src="main.js">  </script>
+    <p>
+        
+      <div id="vo" style="color: red; background-color: blue;
+                  display: inline;
+                  font-size: 30px;">
+        lê thị thương
+      </div>
+      <br>
+      <button onclick="moTrangMoi()" style="font-size: 40px; background-color: orange; color: white; border: none; padding: 10px 20px; border-radius: 5px; cursor: pointer;">
+        Link Video
+    </button>
+      <br>
+      <img id="anh" src="img/lêthuong.jpg" width="20%"
+                                  height="20%">
+    </p>
+    <form>
+        <input type="button" value="nhấp" onclick="bam()"
+               stye ="width:500px
+                      height: 500px">
+        <input type="button" value="rút ra" onclick="rut()"
+               stye ="width:500px
+                      height: 500px">
+    </form>
 </body>
 </html>
